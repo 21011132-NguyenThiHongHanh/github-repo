@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "bdebf195-af83-4c9c-b26c-a0c66f162bcf",
+		"name": "test collection API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35159263"
+	},
+	"item": [
+		{
+			"name": "https://api.thecatapi.com/v1/images/search?limit=10\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/images/search?limit=10\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						"search"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
