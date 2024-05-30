@@ -11,7 +11,7 @@
    + Thời gian phản hồi trung bình : 417ms
    + Kích thước phản hồi : 1.6KB
 - Hình ảnh
-![Uploading Screenshot 2024-05-30 225016.png…]()
+![Screenshot 2024-05-30 225016](https://github.com/21011132-NguyenThiHongHanh/github-repo/assets/124747121/49e40cec-3184-4efc-ac24-0182ad46b793)
 
 - Mô tả chi tiết
     + Số lần lặp lại: 1
